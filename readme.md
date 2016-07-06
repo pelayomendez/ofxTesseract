@@ -1,3 +1,16 @@
+This Fork is an attempt to update and make the original addon work on Windows.
+
+OF Version 0.9.3
+Tesseract version 3.02 (Not latest version)
+OSX Example is currently broken in this repository.
+
+# Actual Tesseract Repo
+[tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
+# Useful for building Tesseract in Windows with Visual Studio 2015
+[loqu8/tesseract-vs2015](https://github.com/loqu8/tesseract-vs2015)
+
+----------------------------------------------------------
+
 # ofxTesseract is an addon for openFrameworks that provides access to the Tesseract OCR library.
 
 *Warning: the training data provided here causes a segmentation fault in some cases. Please use the [latest version](http://code.google.com/p/tesseract-ocr/downloads/list?can=2&q=eng.tar.gz&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount) available from the Tesseract project.*
