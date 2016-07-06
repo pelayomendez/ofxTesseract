@@ -8,7 +8,9 @@
 */
 
 #include "baseapi.h"
-#include "ofMain.h"
+#include "allheaders.h"
+#include "ofMain.h" 
+
 
 class ofxTesseract {
 public:
@@ -21,10 +23,12 @@ public:
 		CHAR = tesseract::PSM_SINGLE_CHAR
 	};
 	
+	/*
 	enum Accuracy  {
 		ACCURATE = tesseract::AVS_MOST_ACCURATE,
 		FAST = tesseract::AVS_FASTEST
 	};
+	*/
 
 	// dataPath is where to find a folder with tessdata inside
 	// default arguments assume bin/data/tessdata/eng.traineddata
@@ -45,7 +49,7 @@ public:
 	
 	// either ofxTesseract::ACCURATE or ofxTesseract::FAST
 	// by default it is ofxTesseract::FAST
-	void setAccuracy(Accuracy accuracy);
+	//void setAccuracy(Accuracy accuracy);
 		
 	// finally, do OCR on an image, or on an image within an roi
 	// make sure your text is at least 10 pixels tall

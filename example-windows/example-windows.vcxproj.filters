@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ofxTesseract.cpp">
+      <Filter>addons\ofxTesseract\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{1e63cfa2-056e-4c6c-a212-e02d768f4320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTesseract">
+      <UniqueIdentifier>{2c39bd78-095b-4c10-a9e0-29b3ee0a49ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTesseract\src">
+      <UniqueIdentifier>{23a5fc44-b517-4c9f-af8b-382f09dafa8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTesseract\libs">
+      <UniqueIdentifier>{0879eda3-5d2f-4870-ac6b-cd7ae4dcda4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTesseract\libs\tesseract">
+      <UniqueIdentifier>{2abf5fff-16bb-48a4-9bf6-b780f9725171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTesseract\libs\tesseract\include">
+      <UniqueIdentifier>{f4e7ea4a-430e-4a08-ab95-8996befd0de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTesseract\libs\tesseract\include\leptonica">
+      <UniqueIdentifier>{17cf2642-153f-4e80-9458-d0430841fc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTesseract\libs\tesseract\include\tesseract">
+      <UniqueIdentifier>{fa0b2bcc-1f76-48ac-b202-0dfe5f4743ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ofxTesseract.h">
+      <Filter>addons\ofxTesseract\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\allheaders.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\alltypes.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\array.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\arrayaccess.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\bbuffer.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\bmf.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\bmp.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\ccbord.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\dewarp.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\environ.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\freetype.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\gplot.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\heap.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\imageio.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\jbclass.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\leptprotos.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\leptwin.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\list.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\morph.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\pix.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\ptra.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\queue.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\readbarcode.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\regutils.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\stack.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\sudoku.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\watershed.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\leptonica</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\apitypes.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\baseapi.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\basedir.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\capi.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\errcode.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\fileerr.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\genericvector.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\helpers.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\host.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\ltrresultiterator.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\memry.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\ndminx.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\pageiterator.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\params.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\platform.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\publictypes.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\resultiterator.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\serialis.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\strngs.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\tesscallback.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\thresholder.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\unichar.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\unicharmap.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\tesseract\include\tesseract\unicharset.h">
+      <Filter>addons\ofxTesseract\libs\tesseract\include\tesseract</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CvUtils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

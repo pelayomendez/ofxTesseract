@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>example-windows</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\src;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\leptonica;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\tesseract;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>liblept168.lib;libtesseract302.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\src;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\leptonica;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\tesseract;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\src;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\leptonica;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\tesseract;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\src;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\leptonica;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\tesseract;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>liblept168.lib;libtesseract302.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\src;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\leptonica;C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\tesseract;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\src;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\leptonica;
+C:\Users\Pelayo\Documents\of_v0.9.3_vs_release\addons\ofxTesseract\libs\tesseract\include\tesseract;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ofxTesseract.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libs\tesseract\include\leptonica\allheaders.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\alltypes.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\array.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\arrayaccess.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\bbuffer.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\bmf.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\bmp.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\ccbord.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\dewarp.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\environ.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\freetype.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\gplot.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\heap.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\imageio.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\jbclass.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\leptprotos.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\leptwin.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\list.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\morph.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\pix.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\ptra.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\queue.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\readbarcode.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\regutils.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\stack.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\sudoku.h" />
+    <ClInclude Include="..\libs\tesseract\include\leptonica\watershed.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\apitypes.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\baseapi.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\basedir.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\capi.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\errcode.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\fileerr.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\genericvector.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\helpers.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\host.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\ltrresultiterator.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\memry.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\ndminx.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\pageiterator.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\params.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\platform.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\publictypes.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\resultiterator.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\serialis.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\strngs.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\tesscallback.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\thresholder.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\unichar.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\unicharmap.h" />
+    <ClInclude Include="..\libs\tesseract\include\tesseract\unicharset.h" />
+    <ClInclude Include="..\src\ofxTesseract.h" />
+    <ClInclude Include="src\CvUtils.h" />
+    <ClInclude Include="src\ofApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

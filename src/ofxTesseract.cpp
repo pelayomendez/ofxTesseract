@@ -7,7 +7,8 @@ void ofxTesseract::setup(string dataPath, bool absolute, string language) {
 	
 	// there is some kind of bug in Init that ignores the datapath argument
 	// so we override it by setting an environment variable
-	setenv("TESSDATA_PREFIX", absoluteTessdataPath.c_str(), 1);
+	//setenv("TESSDATA_PREFIX", absoluteTessdataPath.c_str(), 1);
+	_putenv_s("TESSDATA_PREFIX", absoluteTessdataPath.c_str());
 	tess.Init(absoluteTessdataPath.c_str(), language.c_str());
 
 	// fixes issues with hocr - see http://code.google.com/p/tesseract-ocr/issues/detail?id=463
@@ -44,9 +45,11 @@ ofxTesseract::Mode ofxTesseract::getMode(string modeName) {
 	}
 }
 
+/*
 void ofxTesseract::setAccuracy(Accuracy accuracy) {
 	tess.SetAccuracyVSpeed((tesseract::AccuracyVSpeed) accuracy);
 }
+*/
 
 string ofxTesseract::findText(ofImage& img) {
 	ofRectangle roi(0, 0, img.getWidth(), img.getHeight());
